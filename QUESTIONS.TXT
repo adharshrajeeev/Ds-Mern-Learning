@@ -1,0 +1,33 @@
+Beginner:
+1. How do you declare an empty array in JavaScript? 
+2. How do you access the elements of an array by index?
+3. How do you add elements to the end of an array?
+4. How do you remove elements from the end of an array?
+5. How do you find the length of an array?
+6. How do you check if an element exists in an array?
+7. How do you iterate over the elements of an array using a for loop?
+8. How do you concatenate two arrays together?
+9. How do you find the index of a specific element in an array?
+10. How do you check if an array is empty?
+Intermediate:
+1. How do you add elements to the beginning of an array?
+2. How do you remove elements from the beginning of an array?
+3. How do you remove elements from a specific index in an array?
+4. How do you modify elements at a specific index in an array?
+5. How do you check if all elements in an array satisfy a condition?
+6. How do you sort the elements of an array in ascending order?
+7. How do you reverse the order of elements in an array?
+8. How do you remove duplicate elements from an array?
+9. How do you create a shallow copy of an array?
+10. How do you convert an array to a string?
+Advanced:
+1. How do you perform a binary search on a sorted array?
+2. How do you implement a custom sorting algorithm for an array?
+3. How do you flatten a multi-dimensional array into a single-dimensional array?
+4. How do you find the intersection of two arrays?
+5. How do you find the union of two arrays?
+6. How do you implement a dynamic array that automatically resizes itself?
+7. How do you rotate the elements of an array by a given number of positions?
+8. How do you implement a sparse array in JavaScript?
+9. How do you efficiently remove multiple elements from an array?
+10. How do you implement a circular buffer using an array?
