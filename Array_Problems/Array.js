@@ -151,4 +151,27 @@ function removeDuplicates(array=[]){
     return newArray
 }
 
-printFunction(()=>removeDuplicates(duplicateArray),duplicateArray)
+// 10. How do you convert an array to a string?
+
+function convertArrayToString(array=[]){
+    return array.join(" ")
+}
+
+function binarySearch(array=[],target){
+    let start = 0;
+    let end = array.length - 1;
+    while(start <= end){
+        const mid=Math.floor((start + end)/2);
+        if(array[mid] ===target ){
+            return mid
+        }else if(array[mid] <  target){
+            start=mid+1
+        }else{
+            end=mid - 1
+        }
+
+    }
+    return -1; // Target not found
+}
+
+printFunction(()=>binarySearch(ascArray,10),ascArray)
