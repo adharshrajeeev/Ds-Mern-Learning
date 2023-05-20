@@ -1,8 +1,13 @@
 const array=[1, 5, 9, 12, 18, 21, 25, 30]
-const duplicateArray=[3, 7, 2, 5, 7, 9, 2, 3, 6, 5, 9]
 
-function printFunction(func) {
+
+const sortArray=[8,1,9,3,5,2,10,6,4,7];
+const ascArray=[1,2,3,4,5,6]
+const duplicateArray=[1,2,3,3,2,4,5]
+
+function printFunction(func,passedArray) {
     const result = func();
+    console.log("Passed Array:",passedArray)
     console.log("Returned value:", result);
   }
   
@@ -70,7 +75,80 @@ function addToBeginning(array,element){
    return array
 }
 
+// 2. How do you remove elements from the beginning of an array?
+
+function removeElementBeg(array){
+    array.shift();
+    return array
+}
+
+// 3. How do you remove elements from a specific index in an array?
+
+function removeElement (array,index){
+    var newArray=[]
+    for(var i=0;i<array.length;i++){
+        if(i!==index){
+            newArray.push(array[i])
+        }
+    }
+    return newArray;
+}
+
+// 4. How do you modify elements at a specific index in an array?
+
+function modifyArrayAtIndex(array,element,index){
+    for(var i=0;i<array.length;i++){
+        if(i==index){
+            array[i]=element
+        }
+    }
+    return array
+}
+
+// 6. How do you sort the elements of an array in ascending order?
+
+function sortArryAtAsending(array){
+    var temp=0;
+    for(let i=0;i<array.length;i++){
+       for(let j=i+1;j<array.length;j++){
+        if(array[i] < array[j]){
+            temp=array[i];
+            array[i]=array[j];
+            array[j]=temp
+        }
+       }
+    }
+    return array
+}
 
 
+// 7. How do you reverse the order of elements in an array?
 
-printFunction(()=>addToBeginning(array,1000))
+function reverseArray(array=[]){
+    var newArray=[];
+    for(var i=array.length-1;i>=0;i--){
+        newArray.push(array[i])
+    }
+    return newArray
+}
+
+// 8. How do you remove duplicate elements from an array?
+
+function removeDuplicates(array=[]){
+    var newArray=[];
+    for(var i=0;i<array.length;i++){
+        let flag=0
+        for(var j=i+1;j<array.length;j++){
+            if(array[i]==array[j])
+            {
+               flag=1;
+               break
+            }
+            
+         }
+        if(flag==0)newArray.push(array[i])
+    }
+    return newArray
+}
+
+printFunction(()=>removeDuplicates(duplicateArray),duplicateArray)
